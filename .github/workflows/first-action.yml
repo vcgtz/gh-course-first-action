@@ -1,0 +1,10 @@
+name: First Workflow # The name of the workflow
+on: workflow_dispatch # This event allows that we can manually run this workflow
+jobs:
+  first-job: # The name of the job
+    runs-on: ubuntu-latest # Runner to execute the workflow
+    steps:
+      - name: Print greeting # A first step, indicated by a dash
+        run: echo "Hello World!" # This is part of the same step
+      - name: Print goodbye
+        run: echo "Done - bye!"
